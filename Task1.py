@@ -2,7 +2,6 @@ def logger(func):
     def log(*args):
         arg = ', '.join([str(arg) for arg in args])
         print(f'{func.__name__} called with {arg}')
-        return func(*args)
     return log
 
 
